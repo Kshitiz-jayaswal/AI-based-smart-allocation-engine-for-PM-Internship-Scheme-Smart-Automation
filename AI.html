@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Internship Allocation Engine — Demo</title>
+  <link rel="stylesheet" href="AI.css">
+</head>
+<body>
+  <h1>Internship Allocation Engine (Prototype)</h1>
+
+  <section id="data-entry">
+    <h2>Define Interns</h2>
+    <textarea id="interns-json" placeholder='Paste JSON array of interns here...'></textarea>
+    <h2>Define Projects / Posts</h2>
+    <textarea id="projects-json" placeholder='Paste JSON array of projects here...'></textarea>
+    <br>
+    <button id="run-allocation">Run Allocation</button>
+  </section>
+
+  <section id="output" style="display: none;">
+    <h2>Allocation Result</h2>
+    <table id="allocation-table">
+      <thead>
+        <tr><th>Intern Name</th><th>Assigned Project</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
